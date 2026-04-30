@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Overwatch - NiCOgdh</title>
+  <link rel="stylesheet" href="Genji.css" type="text/css">
+</head>
+
+<body>
+
+  <h2 class="NiCOgdh-title">NiCOgdh – La main de dieu</h2>
+
+  <div class="NiCOgdh-section">
+    <img id="NiCOgdh" src="maxresdefault.jpg.jpg" alt="NiCOgdh Overwatch">
+    <div id="NiCOgdh-container" class="NiCOgdh-description-box"></div>
+  </div>
+
+  <script>
+    const NiCOgdhImage = document.getElementById("NiCOgdh");
+    const NiCOgdhontainer = document.getElementById("NiCOgdh-container");
+
+    const NiCOgdhDescriptionHTML = `
+      <div class="poko-description">
+        <h3>NiCOgdh – la Main de Dieu</h3>
+        <p>
+          <b>NICOGDH</b>, de son vrai nom <b>Gael Gouzerch</b>, est l'un des joueurs français les plus emblématiques 
+          de la scène Overwatch. Connu pour ses <b>bombes de D.Va légendaires</b>, il est devenu une véritable 
+          icône de la Overwatch League.
+        </p>
+        <p>
+          Ancien joueur des <b>Philadelphia Fusion</b>, il a marqué l’histoire grâce à son style agressif, 
+          sa régularité, et sa capacité à retourner une partie en un instant grâce à ses ultimes parfaitement placés.
+        </p>
+        <p>
+          Considéré comme l’un des meilleurs joueurs D.Va au monde, Poko reste une inspiration pour de nombreux joueurs francophones.
+        </p>
+      </div>
+    `;
+
+    NiCOgdhImage.addEventListener("click", () => {
+      NiCOgdhContainer.innerHTML = NiCOgdhDescriptionHTML;
+    });
+  </script>
+
+</body>
+</html>
